@@ -1,2 +1,3 @@
 //tsc --init
-console.log("Hello!!!")
+let hello = "Hello";
+console.log(hello.toUpperCase())
