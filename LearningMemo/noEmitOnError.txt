@@ -1,0 +1,13 @@
+noEmitOnError
+
+説明: noEmitOnError は TypeScript コンパイラのオプションで、true に設定すると、コンパイル時に型エラーが発生した場合に、JavaScript ファイルの出力（emit）を行わないようにします。
+デフォルトは false です。
+
+用途:
+品質保証: 不完全な、またはエラーを含むJavaScriptファイルが生成されるのを防ぎます。これにより、実行時に予期せぬバグが発生するリスクを減らせます。
+開発フローの改善: エラーがある状態で先に進むのを防ぎ、開発者にエラーを早期に修正するよう促します。特にCI/CDパイプラインにおいて、エラーのあるコードがデプロイされるのを防ぐために重要です。
+
+例:
+// example.ts let x: number = "hello"; // 型エラー: stringをnumberに代入しようとしている console.log(x);
+tsconfig.json で "noEmitOnError": true が設定されている場合、上記の example.ts をコンパイルしようとすると、
+コンソールに型エラーが表示され、example.js は生成されません。

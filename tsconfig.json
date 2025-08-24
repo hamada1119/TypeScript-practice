@@ -18,7 +18,7 @@
     // and npm install -D @types/node
 
     // Other Outputs
-    "sourceMap": true,
+    // "sourceMap": true,
     // "declaration": true,
     // "declarationMap": true,
 
@@ -36,6 +36,10 @@
 
     // Recommended Options
     "strict": true,
+    // "noImplicitAny": true,
+    // "strictFunctionTypes": false,
+    // "strictBindCallApply": false,
+    // "strictNullChecks": false,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
